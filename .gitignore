@@ -2,8 +2,10 @@
 .DS_Store
 ._*
 
-# Compser files
-/vendor/
+# Composer files
+/vendor/*
+!/vendor/filp
+
 wiki.md
 
 # local test environment
