@@ -16,8 +16,10 @@ function load_classphp($directory) {
 }
 
 function config($conf){
-	$environment = $_ENV[strtoupper($conf)];
-	return $environment;
+	if($conf = 'all'){
+		$env = $_ENV;
+	}else{ $env = $_ENV[strtoupper($conf)]; }
+	return $env;
 }
 
 require_once 'Configuration.php';
