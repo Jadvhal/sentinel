@@ -71,15 +71,16 @@ a {
  <div class="row">
     <div class="col-md-12">
       <div class="main-icon text-warning"><span class="uxicon uxicon-alert"></span></div>
-        <h1>Forbidden Access (403 error)</h1>
+        <h1>Error 405</h1>
     </div>
   </div>
   <div class="row">
     <div class="col-md-6 col-md-push-3">
-      <p class="lead">You have sent a Forbidden Request to this Page.</p>
+      <p class="lead"><?php echo e($errorz); ?></p>
     </div>
   </div>
 </div>
 
 </body>
 </html>
+<?php /**PATH C:\laragon\www\dyn\views/errors/405.blade.php ENDPATH**/ ?>

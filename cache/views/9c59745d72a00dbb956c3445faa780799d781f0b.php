@@ -71,7 +71,7 @@ a {
  <div class="row">
     <div class="col-md-12">
       <div class="main-icon text-warning"><span class="uxicon uxicon-alert"></span></div>
-        <h1>Error 404</h1>
+        <h1>File <?php echo e($method); ?> not found (404 error)</h1>
     </div>
   </div>
   <div class="row">
@@ -83,4 +83,4 @@ a {
 
 </body>
 </html>
-<?php /**PATH C:\laragon\www\dyn\views\errors/404.blade.php ENDPATH**/ ?>
+<?php /**PATH C:\laragon\www\dyn\views/errors/404.blade.php ENDPATH**/ ?>

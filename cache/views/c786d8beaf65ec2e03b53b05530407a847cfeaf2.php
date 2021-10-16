@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>404</title>
+<title>405</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" >
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style type="text/css">
@@ -71,16 +71,19 @@ a {
  <div class="row">
     <div class="col-md-12">
       <div class="main-icon text-warning"><span class="uxicon uxicon-alert"></span></div>
-        <h1>Error 404</h1>
+        <h1>error 405</h1>
     </div>
   </div>
   <div class="row">
     <div class="col-md-6 col-md-push-3">
-      <p class="lead">If you think what you're looking for should be here, please contact the site owner.</p>
+      <?php
+       //global $method;   
+      ?>
+      <p class="lead">The "<b><?php echo e($method); ?></b>" Method is forbidden on this path</p>
     </div>
   </div>
 </div>
 
 </body>
 </html>
-<?php /**PATH C:\laragon\www\dyn\views\errors/404.blade.php ENDPATH**/ ?>
+<?php /**PATH C:\laragon\www\dyn\views\errors/405.blade.php ENDPATH**/ ?>
