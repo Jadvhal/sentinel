@@ -1,25 +1,37 @@
 <?php
-/****************************************************
- *     APPLICATION ENVIRONMENTS AND CONSTANTS       *
- *                  DEFINITION                      *
+/*****************************************************
+ *     ERROR HANDLER, HANDLES ALL SCRIPT ERRORS      *
+ *             EXCEPT SYNTAX ERRORS                  *
  *****************************************************/
+
+include 'vendor/autoload.php';
+$whoops = new Whoops\Run();
+$errorPage = new Whoops\Handler\PrettyPageHandler();
+
+$errorPage->setPageTitle("500");
+$errorPage->setEditor("vscode");
+ 
+$whoops->pushHandler($errorPage);
+$whoops->register();
+
+
+/*****************************************************
+ *               ALL ROUTES INITIATOR                *
+ *       APPLICATION ENVIRONMENTS AND CONSTANTS      *
+ *****************************************************/
+
 use core\Route;
 use duncan3dc\Laravel\Blade;
 
-// Load the router and vendor classes
 include 'core/Route.php';
-include 'vendor/autoload.php';
 include 'core/Loader.php';
 
-// dotenv file loader
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__, '.env');
-$dotenv->load();
 
-//Exceptions Handler
-include 'core/Exceptions.php';
-\php_error\reportErrors();
+/*****************************************************
+ *     IF YOU NEED TO ADD ANYTHING IT SHOULD BE      *
+ *                  FROM DOWN HERE                   *
+ *****************************************************/
 
-// Define a global basepath
 define('BASEPATH', '/');
 define('controls',	'controls');
 define('app',	    'core');
@@ -27,9 +39,8 @@ define('views',		'views');
 define('cache', 	'cache');
 
 // Define views global paths
+Blade::addPath(views.'/auth');
 Blade::addPath(views.'/errors');
-Blade::addPath(views.'/public');
-define('layout', views.'/layout');
 
 
 /****************************************************
@@ -42,7 +53,28 @@ Route::add('/', function() {
 });
 
 Route::add('/test', function() {
-    echo 'hi there, welcome to the DyF family';
+    echo "hello from DyF";
+});
+
+
+/****************************************************
+ *                 AUTHENTICATICATION               *
+ *             DO NOT CHANGE THIS SECTION           *
+ ****************************************************/
+Route::add('/authorize', function() {
+    return Blade::render("welcome");
+}, 'post');
+
+Route::add('/login', function() {
+    return Blade::render("login");
+});
+
+Route::add('/register', function() {
+    return Blade::render("register");
+});
+
+Route::add('/reset', function() {
+    return Blade::render("reset");
 });
 
 
