@@ -4,7 +4,7 @@ Authored by Abdulbasit Rubeiyya
 
 The dynamic framework is not exactly a framework, but more of a starter kit for you, the thing comprises of several tools plastered together, well you know what am saying, it works but we do not guarantee on that.
 
-<img src="/assets/img/dynamic.png" width="100%" />
+<img src="https://raw.githubusercontent.com/ibnsultan/Dynamic-Framework/main/assets/img/dynamic.png" width="100%" />
 
 ## requirements
  - Apache
