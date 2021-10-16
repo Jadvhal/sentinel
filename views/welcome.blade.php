@@ -8,7 +8,6 @@
 			</div>
 			<nav id="navbar" class="navbar">
 				<ul>
-					<li><a class="nav-link scrollto active" href="#hero">Home</a></li>
 					<li><a class="nav-link scrollto" href="#get-started">About</a></li>
 					<li><a class="nav-link scrollto" href="#features">Documentation</a></li>
 				</ul>
