@@ -4,6 +4,7 @@
 
 # Compser files
 /vendor/
+wiki.md
 
 # local test environment
 /test/
