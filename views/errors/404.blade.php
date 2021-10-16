@@ -71,7 +71,7 @@ a {
  <div class="row">
     <div class="col-md-12">
       <div class="main-icon text-warning"><span class="uxicon uxicon-alert"></span></div>
-        <h1>File not found (404 error)</h1>
+        <h1>Error 404</h1>
     </div>
   </div>
   <div class="row">
