@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>405</title>
+<link href="/assets/img/favicon.png" rel="icon">
 <meta http-equiv="content-type" content="text/html; charset=utf-8" >
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style type="text/css">

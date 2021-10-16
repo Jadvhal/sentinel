@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>500</title>
+<link href="/assets/img/favicon.png" rel="icon">
 <meta http-equiv="content-type" content="text/html; charset=utf-8" >
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style type="text/css">
@@ -71,12 +72,12 @@ a {
  <div class="row">
     <div class="col-md-12">
       <div class="main-icon text-warning"><span class="uxicon uxicon-alert"></span></div>
-        <h1>Server Error (500 error)</h1>
+        <h1>Error 500 </h1>
     </div>
   </div>
   <div class="row">
     <div class="col-md-6 col-md-push-3">
-      <p class="lead">An unexpected error has occured, if the error persist constact the site owner.</p>
+      <p class="lead">An unexpected error has occured, if the error persist contact the site owner.</p>
     </div>
   </div>
 </div>
