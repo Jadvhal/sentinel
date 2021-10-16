@@ -4,6 +4,8 @@ Authored by Abdulbasit Rubeiyya
 
 The dynamic framework is not exactly a framework, but more of a starter kit for you, the thing comprises of several tools plastered together, well you know what am saying, it works but we do not guarantee on that.
 
+<img src="/assets/img/dynamic.png" width="100%" />
+
 ## requirements
  - Apache
  - Php >=7.1
@@ -26,6 +28,7 @@ The dynamic framework is not exactly a framework, but more of a starter kit for 
  - [SMTP tools](https://github.com/snipworks/php-smtp) by snipworks
  - [.env Loader](https://github.com/vlucas/phpdotenv) by vlucas
  - [Error Handler](https://github.com/JosephLenton/PHP-Error) by Joseph Lenton
+ - Icons by [Flaticon](https://www.flaticon.com)
  - Error Pages by Unkwown (to be honest I don't remember the guy)
  - Inspiration by Laravel
  
