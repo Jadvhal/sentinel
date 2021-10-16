@@ -1,5 +1,4 @@
 <img src="https://raw.githubusercontent.com/ibnsultan/Dynamic-Framework/main/assets/img/small.png"/>
----
 
 A PHP starter kit for Noobs
 Authored by Abdulbasit Rubeiyya
