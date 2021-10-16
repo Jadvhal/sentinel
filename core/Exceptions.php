@@ -110,7 +110,7 @@
            $_php_error_is_ini_enabled;
 
     
-    $debug = config('debug');
+    $debug = $_ENV['DEBUG'];
 
     /*
      * Avoid being run twice.
