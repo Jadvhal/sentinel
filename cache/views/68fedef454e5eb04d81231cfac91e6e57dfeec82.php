@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>File Not Found</title>
+<title>404</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" >
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style type="text/css">
