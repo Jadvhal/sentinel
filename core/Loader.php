@@ -23,5 +23,6 @@ function config($conf){
 }
 
 require_once 'Configuration.php';
+require_once 'Notices.php';
 load_classphp('controls');
 ?>
