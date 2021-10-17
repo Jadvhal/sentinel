@@ -5,7 +5,8 @@
         <div class="forny-inner">
             <div class="forny-form">
                 <div class="mb-8 text-center forny-logo">
-                    <img src="/assets/auth/img/logo-03.svg">
+                    <!-- img src="/assets/img/small.png" -->
+                    <h3>{{$_ENV['NAME']}}</h3>
                 </div>
                 <div class="text-center">
                     <h4>Login into account</h4>

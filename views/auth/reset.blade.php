@@ -5,7 +5,7 @@
         <div class="forny-inner">
             <div class="forny-form text-center">
                 <div class="mb-8 text-center forny-logo">
-                    <img src="/assets/auth/img/logo-03.svg">
+                    <img src="/assets/img/small.png">
                 </div>
                 <div class="reset-form d-block">
                     <form class="reset-password-form">
