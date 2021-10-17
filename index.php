@@ -5,6 +5,9 @@
  *****************************************************/
 
 include 'vendor/autoload.php';
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__, '.env');
+$dotenv->load();
+
 $whoops = new Whoops\Run();
 $errorPage = new Whoops\Handler\PrettyPageHandler();
 
@@ -77,6 +80,9 @@ Route::add('/reset', function() {
     return Blade::render("reset");
 });
 
+Route::add('/notice/([A-Za-z])*', function($page) {
+    return Blade::render("notice");
+});
 
 /****************************************************
  *                ERROR PAGES 404, 405              *
