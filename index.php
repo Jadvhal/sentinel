@@ -26,7 +26,7 @@ $whoops->register();
 use control\Authorize;
 use core\Route;
 use duncan3dc\Laravel\Blade;
-use Illuminate\Support\Facades\Auth;
+//use Snipworks\Smtp\Email;
 
 include 'core/Route.php';
 include 'core/Loader.php';
