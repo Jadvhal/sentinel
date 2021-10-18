@@ -4,8 +4,83 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e86cbf2454b6b86a5b38dccb15db99d3",
+    "content-hash": "32b25ff051cd3eae38296a431fb8cf32",
     "packages": [
+        {
+            "name": "ddeboer/imap",
+            "version": "1.12.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ddeboer/imap.git",
+                "reference": "5f1d8ed40b365386c028e038658376410c59e8a8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ddeboer/imap/zipball/5f1d8ed40b365386c028e038658376410c59e8a8",
+                "reference": "5f1d8ed40b365386c028e038658376410c59e8a8",
+                "shasum": ""
+            },
+            "require": {
+                "ext-iconv": "*",
+                "ext-imap": "*",
+                "ext-mbstring": "*",
+                "php": "^7.4 || ^8.0.1"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^v3.1.0",
+                "laminas/laminas-mail": "^2.15.0",
+                "malukenho/mcbumpface": "^1.1.5",
+                "phpstan/phpstan": "^0.12.99",
+                "phpstan/phpstan-phpunit": "^0.12.22",
+                "phpstan/phpstan-strict-rules": "^0.12.11",
+                "phpunit/phpunit": "^9.5.9"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Ddeboer\\Imap\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David de Boer",
+                    "email": "david@ddeboer.nl"
+                },
+                {
+                    "name": "Filippo Tessarotto",
+                    "email": "zoeslam@gmail.com"
+                },
+                {
+                    "name": "Community contributors",
+                    "homepage": "https://github.com/ddeboer/imap/graphs/contributors"
+                }
+            ],
+            "description": "Object-oriented IMAP for PHP",
+            "keywords": [
+                "email",
+                "imap",
+                "mail"
+            ],
+            "support": {
+                "issues": "https://github.com/ddeboer/imap/issues",
+                "source": "https://github.com/ddeboer/imap/tree/1.12.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/Slamdunk",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/ddeboer",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-09-23T05:56:38+00:00"
+        },
         {
             "name": "doctrine/inflector",
             "version": "2.0.3",
@@ -932,6 +1007,42 @@
                 "source": "https://github.com/php-fig/simple-cache/tree/master"
             },
             "time": "2017-10-23T01:57:42+00:00"
+        },
+        {
+            "name": "snipworks/php-smtp",
+            "version": "v2.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/snipworks/php-smtp.git",
+                "reference": "06129fa0632b5be3ddbc91392e48352faaf31140"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/snipworks/php-smtp/zipball/06129fa0632b5be3ddbc91392e48352faaf31140",
+                "reference": "06129fa0632b5be3ddbc91392e48352faaf31140",
+                "shasum": ""
+            },
+            "require": {
+                "ext-fileinfo": "*",
+                "ext-openssl": "*",
+                "php": ">=5.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Snipworks\\Smtp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Simple PHP SMTP Mail Send Script",
+            "support": {
+                "issues": "https://github.com/snipworks/php-smtp/issues",
+                "source": "https://github.com/snipworks/php-smtp/tree/master"
+            },
+            "time": "2020-09-06T10:10:40+00:00"
         },
         {
             "name": "symfony/console",
