@@ -1,9 +1,7 @@
 # OS files
 .DS_Store
 ._*
-.*
 .env
-!.*.example
 
 # Composer files
 /cache/
