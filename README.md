@@ -8,6 +8,7 @@ The dynamic framework is not exactly a framework, but more of a starter kit for 
 ## requirements
  - Apache
  - Php >=7.1
+ - composer v2
  - basic knowledge of Php
 
 ## Features
@@ -26,7 +27,8 @@ The dynamic framework is not exactly a framework, but more of a starter kit for 
  - [Imap tools](https://github.com/ddeboer/imap) by ddeboer
  - [SMTP tools](https://github.com/snipworks/php-smtp) by snipworks
  - [.env Loader](https://github.com/vlucas/phpdotenv) by vlucas
- - [Error Handler](https://github.com/JosephLenton/PHP-Error) by Joseph Lenton
+ - [Php-Error Handler](https://github.com/JosephLenton/PHP-Error) by Joseph Lenton
+ - [Whoop Error Handler](https://github.com/filp/whoops) by filp
  - Icons by [Flaticon](https://www.flaticon.com)
  - Authentication pages by [Arasari Studio](https://themeforest.net/user/arasari/portfolio)
  - Error Pages by Unkwown (to be honest I don't remember the guy)
