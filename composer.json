@@ -12,6 +12,7 @@
         "php": ">=7.1",
         "duncan3dc/blade": "^4.11",
         "vlucas/phpdotenv": "^5.3",
-        "filp/whoops": "^2.14"
+        "filp/whoops": "^2.14",
+        "symfony/console": "^5.3"
     }
 }
