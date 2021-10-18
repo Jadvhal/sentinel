@@ -5,14 +5,12 @@
         <div class="forny-inner">
             <div class="forny-form">
                 <div class="mb-8 text-center forny-logo">
-                    <!-- img src="/assets/img/small.png" -->
-                    <h3>{{$_ENV['NAME']}}</h3>
+                    <img src="/assets/img/small.png">
                 </div>
                 <div class="text-center">
                     <h4>Login into account</h4>
-                    <p class="mb-10">Use your credentials to access your account.</p>
                 </div>
-                <form>
+                <form action="/authorize/login" method="POST">
                     <div class="form-group">
                         <div class="input-group">
                             <div class="input-group-prepend">
@@ -74,7 +72,7 @@
                         <button class="btn btn-primary btn-block">Login</button>
                     </div>
                     <div class="mt-10 mb-6 text-center">
-                        <span>or login with</span>
+                        
                     </div>
                     <div class="text-center">
                         <div class="d-inline-block mr-1">
