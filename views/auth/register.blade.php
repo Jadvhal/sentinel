@@ -1,17 +1,17 @@
 @extends('layout.auth')
-@section('title', 'Reset Pass')
+@section('title', 'Register')
 @section('content')
     <div class="forny-container">
         <div class="forny-inner">
             <div class="forny-form">
                 <div class="mb-8 text-center forny-logo">
-                    <img src="/assets/auth/img/logo-03.svg">
+                    <img src="/assets/img/small.png">
                 </div>
                 <div class="text-center">
                     <h4>Create an account</h4>
                     <p class="mb-10">Setup a new account in a minute.</p>
                 </div>
-                <form>
+                <form action="/authorize" method="POST">
                     <div class="form-group">
                         <div class="input-group">
                             <div class="input-group-prepend">
@@ -25,7 +25,7 @@
                                     </svg>
                                 </span>
                             </div>
-                            <input required class="form-control" name="username" type="username" placeholder="Username">
+                            <input required class="form-control" name="user" type="text" placeholder="Username">
                         </div>
                     </div>
                     <div class="form-group">
@@ -56,7 +56,7 @@
                                     </svg>
                                 </span>
                             </div>
-                            <input required class="form-control" name="password" type="password" placeholder="Password">
+                            <input required class="form-control" name="pass" type="password" placeholder="Password">
                             <div class="input-group-append cursor-pointer">
                                 <span class="input-group-text">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16">
