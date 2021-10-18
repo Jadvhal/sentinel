@@ -1,4 +1,4 @@
-@extends('layout.app')
+@extends('layout.dyf')
 @section('title', 'Dynamic Framework')
 @section('content')
 	<header id="header" class="header fixed-top d-flex align-items-center">
