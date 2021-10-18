@@ -6,10 +6,17 @@ Author : Abdulbasit Rubeiyya
 The dynamic framework is not exactly a framework, but more of a starter kit for you, the thing comprises of several tools plastered together, well you know what am saying, it works but we do not guarantee on that.
 
 ## requirements
+### General Requirements
  - Apache
  - Php >=7.1
  - composer v2
  - basic knowledge of Php
+
+### Php Extenxsions
+ - Imap
+ - curl
+ - mysql
+ - mbstring
 
 ## Features
  - custom URL routing
