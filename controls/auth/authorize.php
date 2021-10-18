@@ -16,16 +16,16 @@ class Authorize{
 		if(mysqli_num_rows($check) > 0){
 			$data = mysqli_fetch_assoc($check);
 			if($data['username'] == $user){
-				setcookie('notice', 'df_reg_201', time() + (86400 * 30), "/"); 
+				setcookie('notice', 'df_reg_201', time() + (180), "/"); 
 			}else{
-				setcookie('notice', 'df_reg_202', time() + (86400 * 30), "/"); 
+				setcookie('notice', 'df_reg_202', time() + (180), "/"); 
 			}
 		}else{
 			$query = "insert into users (username, user_email, user_pass) values ('$user', '$email', '$pass')";
 			if(mysqli_query(conn(), $query)){
-				setcookie('notice', 'df_reg_200', time() + (86400 * 30), "/"); 
+				setcookie('notice', 'df_reg_200', time() + (180), "/"); 
 			}else{
-				setcookie('notice', 'df_reg_209', time() + (86400 * 30), "/");
+				setcookie('notice', 'df_reg_209', time() + (180), "/");
 			}
 		}
 		
@@ -42,10 +42,10 @@ class Authorize{
 			$data = mysqli_fetch_assoc(mysqli_query(conn(), $sql));
 			if($data['user_pass'] == $pass){
 				Session::init($user);
-				setcookie('notice', 'df_log_200', time() + (86400 * 30), "/");
+				setcookie('notice', 'df_log_200', time() + (180), "/");
 			}
 		}else{
-			setcookie('notice', 'df_log_201', time() + (86400 * 30), "/");
+			setcookie('notice', 'df_log_201', time() + (180), "/");
 		}
 
 		header('Location: /notice/auth');
