@@ -1,11 +1,8 @@
 @extends('layout.auth')
 @section('title', 'Reset Pass')
 @section('content')
-    @php if(!isset($_COOKIE['notice'])) {
-            $notice = notice($_COOKIE['notice']);
-        } else {
-            $notice = notice('');
-    } @endphp
+    @php $notice = notice($page);
+    @endphp
     <div class="forny-container">
         <div class="forny-inner">
             <div class="forny-form text-center">
