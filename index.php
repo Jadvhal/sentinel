@@ -58,7 +58,9 @@ Route::add('/', function() {
 });
 
 Route::add('/home', function() {
-    return Blade::render('home');
+    //return Blade::render('home');
+    echo '<pre>';
+    print_r(MailClient::pipe());
 });
 
 
