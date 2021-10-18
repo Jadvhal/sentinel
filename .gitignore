@@ -5,8 +5,6 @@
 !.*.example
 
 # Composer files
-/vendor/*
-!/vendor/filp
 /cache/
 
 wiki.md
