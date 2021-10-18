@@ -13,7 +13,6 @@
         "duncan3dc/blade": "^4.11",
         "vlucas/phpdotenv": "^5.3",
         "filp/whoops": "^2.14",
-        "symfony/console": "^5.3",
         "snipworks/php-smtp": "^2.0",
         "ddeboer/imap": "^1.12"
     }
