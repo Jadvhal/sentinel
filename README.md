@@ -30,6 +30,7 @@ The dynamic framework is not exactly a framework, but more of a starter kit for 
 - easy to use
 - Utilities included
   - imap and smtp > for mail handling
+- Localization support
 
 ## credits
 
