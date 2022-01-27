@@ -38,10 +38,11 @@ include 'core/Loader.php';
  *****************************************************/
 
 define('BASEPATH', '/');
-define('controls',	'controls');
 define('app',	    'core');
 define('views',		'views');
 define('cache', 	'cache');
+define('controls',	'controls');
+define('locale', 	'localization');
 
 // Define views global paths
 Blade::addPath(views.'/auth');

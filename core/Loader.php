@@ -22,6 +22,14 @@ function config($conf){
 	return $env;
 }
 
+function lang($key){
+	$lang = isset($_COOKIE['lang']) ? $_COOKIE['lang'].'.json' : 'en.json';
+	$term = file_get_contents(locale . '/' . $lang);
+	$term = json_decode($term, true);
+
+	return $term[$key];
+}
+
 require_once 'Configuration.php';
 require_once 'Notices.php';
 load_classphp('controls');
