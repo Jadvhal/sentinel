@@ -100,11 +100,13 @@ Route::add('/notice/([a-z]*)', function($page) {
  ****************************************************/
 
 Route::pathNotFound(function($path) {
-    echo Blade::render("404", ['path' => $path]);
+	header('HTTP/1.0 404 Not Found');
+	echo Blade::render("404", ['path' => $path]);
 });
 
 Route::methodNotAllowed(function($path, $method) {
-    echo Blade::render("405", ['method' => $method]);
+	header('HTTP/1.0 405 Method Not Allowed');
+	echo Blade::render("405", ['method' => $method]);
 });
 
 
