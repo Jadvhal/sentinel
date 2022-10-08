@@ -1,6 +1,6 @@
 <img src="https://raw.githubusercontent.com/ibnsultan/dyf/main/assets/img/small.png?token=GHSAT0AAAAAABM6JSMMIBPGYL4FUKLA2BKIYP3ZOVA"/>
 
-A PHP starter kit for Noobs `<br>`
+A PHP starter kit for Noobs <br>
 Author : Abdulbasit Rubeiyya
 
 The dynamic framework is not exactly a framework, but more of a starter kit for you, the thing comprises of several tools plastered together, well you know what am saying, it works but we do not guarantee on that.
@@ -10,7 +10,7 @@ The dynamic framework is not exactly a framework, but more of a starter kit for 
 ### General Requirements
 
 - Apache
-- Php >=7.1
+- Php >=7.3
 - composer v2
 - basic knowledge of Php
 
@@ -29,7 +29,6 @@ The dynamic framework is not exactly a framework, but more of a starter kit for 
   - custom error pages i.e 404, 403, 500
 - easy to use
 - Utilities included
-  - imap and smtp > for mail handling
 - Localization support
 
 ## credits
