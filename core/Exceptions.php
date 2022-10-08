@@ -109,8 +109,7 @@
            $_php_error_global_handler,
            $_php_error_is_ini_enabled;
 
-    
-    $debug = $_ENV['DEBUG'];
+    isset($_ENV['DEBUG']) ? $debug = $_ENV['DEBUG'] : $debug = 'true';
 
     /*
      * Avoid being run twice.
