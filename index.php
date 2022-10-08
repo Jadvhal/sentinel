@@ -23,10 +23,8 @@ $whoops->register();
  *       APPLICATION ENVIRONMENTS AND CONSTANTS      *
  *****************************************************/
 
-use control\Authorize;
 use core\Route;
 use duncan3dc\Laravel\Blade;
-//use Snipworks\Smtp\Email;
 
 include 'core/Route.php';
 include 'core/Loader.php';
@@ -58,25 +56,11 @@ Route::add('/', function() {
     return Blade::render("welcome");
 });
 
-Route::add('/home', function() {
-    return Blade::render('home');
-});
-
 
 /****************************************************
  *                 AUTHENTICATICATION               *
  *             DO NOT CHANGE THIS SECTION           *
  ****************************************************/
-Route::add('/authorize/([a-z]*)', function($page) {
-    switch ($page){
-        case 'register' : Authorize::register(); break;
-        case 'login'    : Authorize::login(); break;
-        case 'reset'    : break;
-        case 'verify'   : break;
-        default:
-            header('Location: /404');
-    }
-}, 'post');
 
 Route::add('/login', function() {
     return Blade::render("login");
@@ -88,10 +72,6 @@ Route::add('/register', function() {
 
 Route::add('/reset', function() {
     return Blade::render("reset");
-});
-
-Route::add('/notice/([a-z]*)', function($page) {
-    return Blade::render("notice", ['page'=>$page]);
 });
 
 /****************************************************
