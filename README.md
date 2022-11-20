@@ -26,7 +26,7 @@ The dynamic framework is not exactly a framework, but more of a starter kit for 
 - custom URL routing
 - Beatifull error and exceptional Handling
   - According to the author of php-error, he says it works with ajax too, but I have not tested it.
-  - custom error pages i.e 404, 403, 500
+  - custom error pages i.e 404, 403, 405(CS), 500
 - easy to use
 - Utilities included
 - Localization support
