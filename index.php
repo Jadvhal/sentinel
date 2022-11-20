@@ -91,7 +91,7 @@ Route::methodNotAllowed(function($path, $method) {
 
 Route::userNotAllowed(function($path, $method) {
 	header('HTTP/1.0 403 Forbidden');
-	echo 'NOT ALLOWED';
+	echo Blade::render("403");
 });
 
 /****************************************************
