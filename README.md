@@ -45,4 +45,4 @@ The dynamic framework is not exactly a framework, but more of a starter kit for 
 - Error Pages by Unkwown (to be honest I don't remember the guy)
 - Inspired by Laravel
 
- Powered by [Actinium Technologies](https://actech.cc)
+Made with love of <img src="https://www.php.net/images/logos/elephpant-running-78x48.gif" width="30px">
