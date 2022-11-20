@@ -1,4 +1,6 @@
-<img src="https://raw.githubusercontent.com/ibnsultan/dyf/main/assets/img/small.png?token=GHSAT0AAAAAABM6JSMMIBPGYL4FUKLA2BKIYP3ZOVA"/>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ibnsultan/dyf/main/assets/img/small.png?token=GHSAT0AAAAAABM6JSMMIBPGYL4FUKLA2BKIYP3ZOVA"/>
+</p>
 
 A PHP starter kit for Noobs <br>
 Author : Abdulbasit Rubeiyya
