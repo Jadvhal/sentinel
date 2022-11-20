@@ -18,15 +18,6 @@ class Route {
 		*/
 	public static function add($expression, $function, $method = 'get', $role=null){
 
-		# check if the user is allowed to access the route
-		if($role != null) {
-			if(!self::checkRole($role)) {
-				call_user_func_array(self::$userNotAllowed, Array($expression, $method));
-				die();
-			}
-		}
-
-		# if user passes the authentiction log the routes
 		array_push(self::$routes, Array(
 			'expression' => $expression,
 			'function' => $function,
@@ -51,8 +42,14 @@ class Route {
 	}
 
 	public static function checkRole($role){
-		if(in_array($_SESSION['role'], $role)) {
-			return true;
+		if(is_array($role)){
+			if(in_array($_SESSION['role'], $role)) {
+				return true;
+			}
+		}else{
+			if($_SESSION['role'] == $role) {
+				return true;
+			}
 		}
 	}
 
@@ -109,6 +106,19 @@ class Route {
 
 			// Check path match
 			if (preg_match('#'.$route['expression'].'#'.($case_matters ? '' : 'i').'u', $path, $matches)) {
+				
+				// check if user is allowed to access the route
+				if(isset($route['role'])){
+					if(!self::checkRole($route['role'])){
+						$route_match_found = true;
+						// call the not allowed function
+						if (self::$userNotAllowed) {
+							call_user_func_array(self::$userNotAllowed, Array($path, $method));
+						}
+						break;
+					}
+				}
+				
 				$path_match_found = true;
 
 				// Cast allowed method to array if it's not one already, then run through all methods
