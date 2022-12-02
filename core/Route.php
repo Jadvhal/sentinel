@@ -21,7 +21,8 @@ class Route {
 		array_push(self::$routes, Array(
 			'expression' => $expression,
 			'function' => $function,
-			'method' => $method
+			'method' => $method,
+			'role' => $role
 		));
 	}
 
