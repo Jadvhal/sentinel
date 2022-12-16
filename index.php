@@ -39,8 +39,8 @@ define('BASEPATH', '/');
 define('app',	    'core');
 define('views',		'views');
 define('cache', 	'cache');
+define('locale', 	'locale');
 define('controls',	'controls');
-define('locale', 	'localization');
 
 // Define views global paths
 Blade::addPath(views.'/auth');
