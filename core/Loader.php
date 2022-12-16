@@ -1,19 +1,21 @@
 <?php
 # class loader
-function load_classphp($directory) {
-	if(is_dir($directory)) {
+function load_controllers($directory): void {
+	if(is_dir($directory)) :
 		$scan = scandir($directory);
-		unset($scan[0], $scan[1]); //unset . and ..
-		foreach($scan as $file) {
-			if(is_dir($directory."/".$file)) {
-				load_classphp($directory."/".$file);
-			} else {
-				if(strpos($file, '.php') !== false) {
+		unset($scan[0], $scan[1]); # unset . and ..
+
+		# foreach scaned directory recall the function
+		foreach($scan as $file):
+			if(is_dir($directory."/".$file)):
+				load_controllers($directory."/".$file);
+			else:
+				if(strpos($file, '.php') !== false):
 					require_once($directory."/".$file);
-				}
-			}
-		}
-	}
+				endif;
+			endif;
+		endforeach;
+	endif;
 }
 
 
@@ -27,6 +29,6 @@ function __($key){
 }
 
 # load the systems core files
-require_once 'Configuration.php';
-load_classphp('controls');
+require_once 'engine.php';
+load_controllers('controls');
 ?>
