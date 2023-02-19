@@ -1,4 +1,6 @@
 <?php
+
+use Nette\Utils\Html;
 use Nette\Database\Connection;
 
 function db(){
@@ -40,6 +42,17 @@ function __($key){
 	$lang = $_COOKIE['lang'] ?? 'en';
 	$term = file_get_contents(locale . "/$lang.json");
 	return json_decode($term)->$key;
+}
+
+# config function
+function config($key){
+	$key = strtoupper($key);
+	return $_ENV[$key];
+}
+
+# make the HTML globally available
+function render(){
+	return new Html();
 }
 
 ?>
