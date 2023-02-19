@@ -1,5 +1,5 @@
 <?php
-class FileUploader{
+class Utils{
     public static function upload($file='media', $dir=''){
         $target_dir = '/uploads//' . $dir;
         $imageFileType = strtolower(pathinfo($_FILES[$file]["name"],PATHINFO_EXTENSION));
