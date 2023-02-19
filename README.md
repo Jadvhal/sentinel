@@ -2,12 +2,11 @@
   <img src="https://raw.githubusercontent.com/ibnsultan/dyf/main/assets/img/small.png?token=GHSAT0AAAAAABM6JSMMIBPGYL4FUKLA2BKIYP3ZOVA"/>
 </p>
 
-A PHP starter kit for Noobs `<br>`
+A PHP starter kit for Noobs, Check the Wiki from [here](https://github.com/ibnsultan/dyf/wiki)
+
 Author : Abdulbasit Rubeiyya
 
 The dynamic framework is not exactly a framework, but more of a starter kit for you, the thing comprises of several tools plastered together, well you know what am saying, it works but we do not guarantee on that.
-
-## requirements
 
 ### General Requirements
 
@@ -38,7 +37,7 @@ The dynamic framework is not exactly a framework, but more of a starter kit for 
   - Upload Controller
 - Localization support
 
-## credits
+## Credits
 
 - [Simple PHP router](https://github.com/steampixel/simplePHPRouter) by steampixel
 - [Blade template Engine](http://duncan3dc.github.io/blade/) by duncan3dc
@@ -55,4 +54,4 @@ The dynamic framework is not exactly a framework, but more of a starter kit for 
   - [Database abstraction Layer](https://doc.nette.org/en/database)
   - [Nette Utils](https://doc.nette.org/en/utils)
 
-Made with love of `<img src="https://www.php.net/images/logos/elephpant-running-78x48.gif" width="30px">`
+Check the Wiki from [here](https://github.com/ibnsultan/dyf/wiki)
