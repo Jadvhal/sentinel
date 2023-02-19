@@ -25,6 +25,16 @@ The dynamic framework is not exactly a framework, but more of a starter kit for 
 - mysql
 - mbstring
 
+## INSTALLATION
+
+Download the latest releas from the [Release section](https://github.com/ibnsultan/dyf/releases) or clone the repository by running
+
+```bash
+git clone https://github.com/dyf/ibnsultan.git
+cd dyf
+composer install
+```
+
 ## Features
 
 - Custom URL routing
