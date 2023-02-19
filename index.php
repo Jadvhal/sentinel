@@ -6,7 +6,7 @@
 session_start();
 include 'vendor/autoload.php';
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__, '.env');
-$dotenv->load();
+$dotenv->safeLoad();
 
 $whoops = new Whoops\Run();
 $errorPage = new Whoops\Handler\PrettyPageHandler();
@@ -55,7 +55,6 @@ Blade::addPath(views.'/public');
 Route::add('/', function() {
     return Blade::render("welcome");
 });
-
 
 /****************************************************
  *                 AUTHENTICATICATION               *
