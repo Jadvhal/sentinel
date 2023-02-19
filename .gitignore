@@ -10,6 +10,7 @@ wiki.md
 
 # local test environment
 /test/
+/vendor/
 docker-build.sh
 docker-bash.sh
 docker-run.sh
