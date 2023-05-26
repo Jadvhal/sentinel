@@ -24,7 +24,6 @@ $whoops->register();
  *****************************************************/
 
 use core\Route;
-use duncan3dc\Laravel\Blade;
 
 include 'core/Route.php';
 include 'core/Loader.php';
@@ -42,10 +41,8 @@ define('cache', 	'cache');
 define('locale', 	'locale');
 define('controls',	'controls');
 
-// Define views global paths
-Blade::addPath(views.'/auth');
-Blade::addPath(views.'/errors');
-Blade::addPath(views.'/public');
+# preload views directory
+viewPaths(views, ['auth', 'errors', 'public']);
 
 /****************************************************
  *              YOU CAN DEFINE YOUR ROUTES          *
@@ -53,7 +50,7 @@ Blade::addPath(views.'/public');
  ****************************************************/
 
 Route::add('/', function() {
-    return Blade::render("welcome");
+    return view("welcome");
 });
 
 /****************************************************
@@ -62,15 +59,15 @@ Route::add('/', function() {
  ****************************************************/
 
 Route::add('/login', function() {
-    return Blade::render("login");
+    return view("login");
 });
 
 Route::add('/register', function() {
-    return Blade::render("register");
+    return view("register");
 });
 
 Route::add('/reset', function() {
-    return Blade::render("reset");
+    return view("reset");
 });
 
 /****************************************************
@@ -80,17 +77,17 @@ Route::add('/reset', function() {
 
 Route::pathNotFound(function($path) {
 	header('HTTP/1.0 404 Not Found');
-	echo Blade::render("404", ['path' => $path]);
+	echo view("404", ['path' => $path]);
 });
 
 Route::methodNotAllowed(function($path, $method) {
 	header('HTTP/1.0 405 Method Not Allowed');
-	echo Blade::render("405", ['method' => $method]);
+	echo view("405", ['method' => $method]);
 });
 
 Route::userNotAllowed(function($path, $method) {
 	header('HTTP/1.0 403 Forbidden');
-	echo Blade::render("403");
+	echo view("403");
 });
 
 /****************************************************
