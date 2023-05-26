@@ -9,7 +9,7 @@
         }
     ],
     "require": {
-        "php": ">=7.1",
+        "php": "^7.3|^8.1",
         "duncan3dc/blade": "^4.11",
         "vlucas/phpdotenv": "^5.3",
         "filp/whoops": "^2.14",
