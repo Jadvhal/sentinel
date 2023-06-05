@@ -1,0 +1,26 @@
+.vw-80{
+    width: 80vw !important;
+    max-width: 1080px !important;
+}
+
+.btn-primary{
+    background: #8E24AA !important;
+}
+
+.spinner-border{
+    width: 1rem !important;
+    height: 1rem !important;
+}
+
+.swal-button-container {
+    width: 100%;
+    text-align: center;
+}
+
+.swal-button-container button{
+    width: 100px;
+}
+
+button.swal-button.swal-button--confirm {
+    background: purple;
+}

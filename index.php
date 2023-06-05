@@ -3,6 +3,7 @@
  *     ERROR HANDLER, HANDLES ALL SCRIPT ERRORS      *
  *             EXCEPT SYNTAX ERRORS                  *
  *****************************************************/
+
 session_start();
 include 'vendor/autoload.php';
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__, '.env');
@@ -50,8 +51,21 @@ viewPaths(views, ['auth', 'errors', 'public']);
  ****************************************************/
 
 Route::add('/', function() {
-    return view("welcome");
+	return view("welcome");
 });
+
+Route::add('/about', function() {
+	return view("about");
+});
+
+/****************************************************
+ *                     API SECTION                  *
+ *             DO NOT CHANGE THIS SECTION           *
+ ****************************************************/
+
+Route::add('/api/v1/analyze', function() {
+	GptZero::init();
+}, 'post');
 
 /****************************************************
  *                 AUTHENTICATICATION               *
@@ -59,15 +73,15 @@ Route::add('/', function() {
  ****************************************************/
 
 Route::add('/login', function() {
-    return view("login");
+	return view("login");
 });
 
 Route::add('/register', function() {
-    return view("register");
+	return view("register");
 });
 
 Route::add('/reset', function() {
-    return view("reset");
+	return view("reset");
 });
 
 /****************************************************
@@ -93,14 +107,14 @@ Route::userNotAllowed(function($path, $method) {
 /****************************************************
  *      VIEW REGISTERED ROUTES AND THEIR METHODS    *
  *                  USE THIS SECTION                *
- ****************************************************/ 
+ ****************************************************/
 Route::add('/routes', function() {
-    $routes = Route::getAll();
-    echo '<ul>';
-    foreach ($routes as $route) {
-        echo '<li>'.$route['expression'].' ('.$route['method'].')</li>';
-    }
-    echo '</ul>';
+	$routes = Route::getAll();
+	echo '<ul>';
+	foreach ($routes as $route) {
+		echo '<li>'.$route['expression'].' ('.$route['method'].')</li>';
+	}
+	echo '</ul>';
 });
 
 // Run the Router with the given Basepath

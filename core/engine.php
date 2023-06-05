@@ -43,6 +43,9 @@ function config($key){
 	return $_ENV[$key];
 }
 
+# request function
+function request($key){ return $_REQUEST[$key] ?? null; }
+
 # HTML render and view template engine
 function render(){ return new Html(); }
 function view($path, $data = []){ return Blade::render($path, $data);}
