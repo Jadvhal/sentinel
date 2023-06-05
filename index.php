@@ -67,22 +67,6 @@ Route::add('/api/v1/analyze', function() {
 	GptZero::init();
 }, 'post');
 
-/****************************************************
- *                 AUTHENTICATICATION               *
- *             DO NOT CHANGE THIS SECTION           *
- ****************************************************/
-
-Route::add('/login', function() {
-	return view("login");
-});
-
-Route::add('/register', function() {
-	return view("register");
-});
-
-Route::add('/reset', function() {
-	return view("reset");
-});
 
 /****************************************************
  *                ERROR PAGES 404, 405              *
