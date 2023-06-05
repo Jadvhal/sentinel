@@ -31,7 +31,7 @@ cd sentinel
 composer install
 ```
 
-I mean there's no magic just run it as you'd run any other php project
+I mean there's no magic just run it as you'd run any other php project and use it at your own discretion, if it doesn't work it's what you get when an app is developed in an hour 💀😒 
 
 ## Credits
 
