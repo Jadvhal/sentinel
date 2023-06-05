@@ -6,7 +6,7 @@ GPTZERO Clone, but Better
 
 Author : Abdulbasit Rubeiyya
 
-Sentinel is a groundbreaking multilanguage text content detection app system that effortlessly determines whether content is human-written or AI-generated. With its advanced natural language processing capabilities, Sentinel enables users to verify authenticity, combat fake news, and ensure compliance with ethical guidelines. Stay ahead in the AI era with Sentinel, your trusted guardian against artificially generated content.The dynamic framework is not exactly a framework, but more of a starter kit for you, the thing comprises of several tools plastered together, well you know what am saying, it works but we do not guarantee on that
+Sentinel is a groundbreaking multilanguage text content detection app system that effortlessly determines whether content is human-written or AI-generated. With its advanced natural language processing capabilities, Sentinel enables users to verify authenticity, combat fake news, and ensure compliance with ethical guidelines. Stay ahead in the AI era with Sentinel, your trusted guardian against artificially generated content.
 
 ### General Requirements
 
