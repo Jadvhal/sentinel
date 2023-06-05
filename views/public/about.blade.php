@@ -1,7 +1,7 @@
 @extends('layout.app')
 @section('title', 'About Sentinel')
 @section('content')
-	
+    
 	<section id="hero">
 		<div class="hero-container" data-aos="fade-in">
 			<h1>About Sentinel</h1>
